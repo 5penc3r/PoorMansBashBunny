@@ -1,0 +1,6 @@
+#!/bin/bash
+LED GREEN SLOW
+
+ATTACKMODE STORAGE
+sleep 10
+LED GREEN ON
