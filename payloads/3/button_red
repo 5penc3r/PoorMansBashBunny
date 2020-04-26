@@ -1,0 +1,12 @@
+#!/bin/bash
+LED RED SLOW
+
+ATTACKMODE HID
+sleep 5
+
+LED RED ON
+sleep 120
+
+LED RED OFF
+halt
+
