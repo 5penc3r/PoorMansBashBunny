@@ -1,4 +1,5 @@
 #!/bin/bash
+`date` >> /var/log/bunny_2.log
 
 # Duckberry Pi
 # Simple Duckyscript interpreter in Bash modified for the Raspberry Pi Zero.
@@ -29,6 +30,7 @@ sleepcmd="/bunny/bin/usleep"
 # ASJ - If keyboard change device number we catch it
 kbddevice="$(ls /dev/hidg*)"
 kb="$kbddevice keyboard"
+echo "Using: $kb" >> /var/log/bunny_2.log
 
 # ASJ - changed keyconvertion to ass. array - more flexible
 declare -A conv
