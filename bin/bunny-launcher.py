@@ -90,8 +90,7 @@ def handleButtons():
 
 # Returns decimal reprecentation of the DIP switches. Eg: Switches set to 1001, returns 9
 def getSwitch():
-    #value = 15 - ( GPIO.input(IO_DIP[0])*1 + GPIO.input(IO_DIP[1])*2 +  GPIO.input(IO_DIP[2])*4 + GPIO.input(IO_DIP[3])*8 )
-    value = GPIO.input(IO_DIP[0])*8 + GPIO.input(IO_DIP[1])*4 +  GPIO.input(IO_DIP[2])*2 + GPIO.input(IO_DIP[3])*1
+    value = 15 - (GPIO.input(IO_DIP[0])*8 + GPIO.input(IO_DIP[1])*4 +  GPIO.input(IO_DIP[2])*2 + GPIO.input(IO_DIP[3])*1)
     return value
 
 
