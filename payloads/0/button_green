@@ -1,6 +1,6 @@
 #!/bin/bash
 
-keyboardLayout="DK"
+keyboardLayout="US"
 export keyboardLayout # If you live in the US, just rem this out
 
 LED GREEN OFF 
